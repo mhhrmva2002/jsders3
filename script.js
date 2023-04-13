@@ -70,5 +70,5 @@ var b = "5,4,3,2,1";
 var array = b.split(",");
 var sum = array.reduce(function(total , num) {
       return +total + + num;
-});
+},0);
 console.log(sum);
