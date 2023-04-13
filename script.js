@@ -33,3 +33,16 @@ let newstudents= students.map((student) =>{
     }
 })
 console.log(newstudents);
+
+
+
+
+// Task 3
+let bdays = ['08-14', '10-04', '04-21', '08/14', '10/04', '04/21'];
+// - isharesini / ile deyishin
+// output: ['08/14', '10/04', '04/21', 08/14, '10/04', '04/21'];
+let newBdays = bdays.map(function(tarix) {
+  let monthDay = tarix.replace('-', '/');
+  return monthDay;
+});
+console.log(newBdays);
